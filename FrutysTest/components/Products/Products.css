@@ -1,0 +1,73 @@
+.products-container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); */
+    /* grid-template-columns: 270px 270px 270px 270px; */
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-column-gap: 25px;
+    grid-row-gap: 58px;
+    justify-items: center;
+    max-width: 1160px;
+    margin: 0 auto 140px;
+    padding: 0;
+}
+.products-container__name {
+    max-width: 1160px;
+    margin: 0 auto 87px;
+    font-family: 'Gilroy-Bold';
+    font-size: 70px;
+}
+.products-element {
+    width: 270px;
+    list-style-type: none;
+}
+.products-element__img-container {
+    width: 270px;
+    height: 197px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-orange);
+    border-radius: 10px;
+}
+.products-element__img {
+
+}
+.products-element__name-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 0;
+}
+.products-element__name {
+    font-family: 'Gilroy-Semibold';
+    font-size: 20px;
+}
+.products-element__price {
+    font-family: 'Gilroy-Semibold';
+    font-size: 18px;
+}
+.products-element__weigth-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products-element__weigth {
+    font-family: 'Gilroy-Semibold';
+    font-size: 12px;
+}
+.products-element__btn {
+    width: 106px;
+    height: 40px;
+
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    color: var(--color-black);
+
+    background-color: var(--color-orange);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.products-element__btn_active {
+    background-color: rgb(189, 73, 73);
+}
